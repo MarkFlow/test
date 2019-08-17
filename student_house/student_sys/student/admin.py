@@ -12,7 +12,7 @@ class StudentAdmin (admin.ModelAdmin):
                     'phone',
                     'phone',
                     'status',
-                    'created_time',
+                    'created_time'
                     )
     list_filter = ('sex', 'status', 'created_time')
     search_fields = ('name', 'profession')

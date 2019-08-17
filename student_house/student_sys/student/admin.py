@@ -24,7 +24,7 @@ class StudentAdmin (admin.ModelAdmin):
                 ('email', 'qq', 'phone'),
                 'status'
             )
-        })
+        }),
     )
 
 

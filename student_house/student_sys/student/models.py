@@ -27,7 +27,7 @@ class Student (models.Model):
 
     @classmethod
     def get_all(cls):
-        return cls.object.all()
+        return cls.objects.all()
 
     class Meta:
         verbose_name = verbose_name_plural = '学员信息'

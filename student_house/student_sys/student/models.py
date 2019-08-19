@@ -25,6 +25,10 @@ class Student (models.Model):
     def __str__(self):
         return '<Student: {}>'.format(self.name)
 
+    @classmethod
+    def get_all(cls):
+        return cls.object.all()
+
     class Meta:
         verbose_name = verbose_name_plural = '学员信息'
 

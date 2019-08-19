@@ -15,6 +15,7 @@ def index(request):
             return HttpResponseRedirect(reverse('index'))
     else:
         form = StudentForm()
+
     context = {
         'students': students,
         'form': form
